@@ -7,4 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Http request         filename          method in file
+  get "/hi", controller: "pages", action: "first_page"
+  get "/goodbye", controller: "pages", action: "second_page"
+  resources :greetings
 end
