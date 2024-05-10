@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   # Http request         filename          method in file
-  get "/hi", controller: "pages", action: "first_page"
-  get "/goodbye", controller: "pages", action: "second_page"
+  get "/hi" => "pages#first_page"
+  get "/goodbye" => "pages#second_page"
   resources :greetings
 end
